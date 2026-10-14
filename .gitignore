@@ -1,0 +1,54 @@
+# ============================================================
+#  NUM STL Viewer (Python 复现版) —— 提交忽略规则
+# ============================================================
+
+# --- 专有文件：原始商业程序与其提取产物，不随仓库分发 ---
+#  NUM_STLViewer.exe   NUMROTO 随 3D 仿真结果分发的查看器（逆向参考用，不参与运行）
+#  _strings.txt        由上述 exe 提取的字符串表
+#  NUM_STLViewer.ini   原程序格式的界面/视图配置
+NUM_STLViewer.exe
+_strings.txt
+NUM_STLViewer.ini
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+
+# --- 测试与覆盖率 ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# --- 工具与编辑器 ---
+.workbuddy/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- 运行产物与临时文件 ---
+outputs/
+*.log
+*.tmp
+*.bak
+~$*
+
+# --- 操作系统 ---
+.DS_Store
+Thumbs.db
+desktop.ini
